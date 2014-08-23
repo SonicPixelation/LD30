@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Sanic\Camera_Controller.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Sanic\GalacticGenerator.cs">
     <Files>
-      <File FileName="Assets\Sanic\Camera_Controller.cs" Line="23" Column="3" />
+      <File FileName="Assets\Sanic\GalacticGenerator.cs" Line="78" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
