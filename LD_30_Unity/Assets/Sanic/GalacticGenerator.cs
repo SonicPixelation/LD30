@@ -105,7 +105,7 @@ public class GalacticGenerator : MonoBehaviour {
 		{
 			GameObject obj = (GameObject)Instantiate(SunPrefab,new Vector3(vec.x,vec.y, 2),Quaternion.identity);
 
-			obj.transform.parent = transform;
+			obj.transform.parent = transform.FindChild("Canvas").transform;
 
 			Vector4 color = new Vector4((float)random.NextDouble(), (float)random.NextDouble(),(float)random.NextDouble(),1);
 
@@ -113,8 +113,20 @@ public class GalacticGenerator : MonoBehaviour {
 			{
 				GameObject gobject = obj.transform.GetChild(i).gameObject;
 				SpriteRenderer renderer = obj.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>();
-				if(renderer == null || gobject.name == "Selector"){continue;}
-				renderer.color = color;
+
+				if(renderer == null || gobject.name == "Selector")
+				{
+					CanvasRenderer cRenderer = gobject.GetComponent<CanvasRenderer>();
+					if(cRenderer != null)
+					{
+						cRenderer.SetColor(color);
+					}
+				}
+				else
+				{
+					renderer.color = color;
+				}
+
 			}
 		}
 	}

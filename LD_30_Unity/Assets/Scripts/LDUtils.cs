@@ -4,17 +4,20 @@ using System.Collections.Generic;
 
 public class LDUtils {
 
+	public static List <Vector4> planetColors = new List <Vector4> ();
+	public static List <string> planetNames = new List <string>();
+
+
 	public static float getDistance2D(Vector2 vec0, Vector2 vec1)
 	{
-		float a = Mathf.Pow(vec0.x - vec1.x), 2);
-		float b = Mathf.Pow(vec0.y - vec1.y), 2);
+		float a = Mathf.Pow((vec0.x - vec1.x), 2);
+		float b = Mathf.Pow((vec0.y - vec1.y), 2);
 
 		float c = Mathf.Sqrt(a+b);
 
 		return c;
 	}
 
-	public static List <Vector4> planetColors = new List <Vector4> ();
 
 	public static void LoadColors()
 	{
@@ -34,7 +37,7 @@ public class LDUtils {
 	}
 
 
-	public static List <string> planetNames = new List <string>();
+
 
 	public static void LoadPlanetNames()
 	{
