@@ -46,9 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Sanic\Camera_MainMenu.cs" />
      <Compile Include="Assets\Sanic\GalacticGenerator.cs" />
+     <Compile Include="Assets\Sanic\Line.cs" />
      <Compile Include="Assets\Scripts\Camera_Controller.cs" />
      <Compile Include="Assets\Scripts\LDUtils.cs" />
+     <Compile Include="Assets\Spencer\GUI\Camera Test.cs" />
+     <Compile Include="Assets\Spencer\GUI\GUI_Test.cs" />
      <None Include="Assets\Shrimp\PlaceHolder.txt" />
      <None Include="Assets\Scenes\PlaceHolder.txt" />
      <None Include="Assets\Graphics\Graphics_TODO.txt" />

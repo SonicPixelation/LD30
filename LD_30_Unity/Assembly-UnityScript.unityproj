@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{A7145D10-9CAF-FD90-3117-F6B9A3DDB893}</ProjectGuid>
+	<ProjectGuid>{74857563-CCA5-AF90-DBCD-959638FCAB89}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,13 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Sanic\Camera_MainMenu.cs" />
-     <Compile Include="Assets\Sanic\GalacticGenerator.cs" />
-     <Compile Include="Assets\Sanic\Line.cs" />
-     <Compile Include="Assets\Scripts\Camera_Controller.cs" />
-     <Compile Include="Assets\Scripts\LDUtils.cs" />
-     <Compile Include="Assets\Spencer\GUI\Camera Test.cs" />
-     <Compile Include="Assets\Spencer\GUI\GUI_Test.cs" />
+     <Compile Include="Assets\Sanic\NewBehaviourScript.js" />
      <None Include="Assets\Shrimp\PlaceHolder.txt" />
      <None Include="Assets\Scenes\PlaceHolder.txt" />
      <None Include="Assets\Graphics\Graphics_TODO.txt" />

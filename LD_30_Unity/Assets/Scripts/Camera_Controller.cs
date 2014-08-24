@@ -32,28 +32,47 @@ public class Camera_Controller : MonoBehaviour {
 
 	void Update () 
 	{
-		xPos += (Input.GetAxis("Horizontal") * Time.deltaTime * .1f) / (cam.orthographicSize*.1f);
-		yPos += (Input.GetAxis("Vertical") * Time.deltaTime * .1f) / (cam.orthographicSize *.1f);
-
-		xPos = xPos % 1;
-		yPos = yPos % 1;
-
-		star0.renderer.material.mainTextureOffset = new Vector2(-xPos,-yPos);
-		star1.renderer.material.mainTextureOffset = new Vector2(-xPos* .25f, -yPos * .25f);
 
 
-		float xOff = Input.GetAxis("Horizontal") * camMoveSpeed * Time.deltaTime;
-		float yOff = Input.GetAxis("Vertical") * camMoveSpeed * Time.deltaTime;
 
 
-		transform.position += new Vector3(xOff,yOff,0);
 
 		float scroll = Input.GetAxis("Mouse ScrollWheel");
+
+		cam.orthographicSize += scroll * 25;
+		
+
+		if(cam.orthographicSize <= 10)
+		{
+			cam.orthographicSize = 10;
+		}
+
+		if(cam.orthographicSize >= 30)
+		{
+			cam.orthographicSize = 30;
+		}
+
 
 		float size = 30 / (cam.orthographicSize / 5);
 
 		star0.renderer.material.mainTextureScale = new Vector2(size,size);
 		star1.renderer.material.mainTextureScale = new Vector2(size,size);
-		star2.renderer.material.mainTextureScale = new Vector2(size,size);
+		//star2.renderer.material.mainTextureScale = new Vector2(size,size);
+
+
+		xPos += (Input.GetAxis("Horizontal") * Time.deltaTime * .1f) / (cam.orthographicSize*.1f);
+		yPos += (Input.GetAxis("Vertical") * Time.deltaTime * .1f) / (cam.orthographicSize *.1f);
+		
+		xPos = xPos % 1;
+		yPos = yPos % 1;
+		
+		star0.renderer.material.mainTextureOffset = new Vector2(-xPos,-yPos);
+		star1.renderer.material.mainTextureOffset = new Vector2(-xPos* .25f, -yPos * .25f);
+		
+		
+		float xOff = Input.GetAxis("Horizontal") * camMoveSpeed * Time.deltaTime;
+		float yOff = Input.GetAxis("Vertical") * camMoveSpeed * Time.deltaTime;
+
+		transform.position += new Vector3(xOff,yOff,0);
 	}
 }
