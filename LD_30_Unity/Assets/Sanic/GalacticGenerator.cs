@@ -34,27 +34,18 @@ public class GalacticGenerator : MonoBehaviour {
 
 	private List<Vector2> suns = new List<Vector2>();
 
-	private bool[] linked;
 
 	//
 	void Start () 
 	{
 		GenerateNewStarPoint();
-
-
 	}
 
 
 
-	private int LastIndex = 0;
+
 	void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.G))
-		{
-			ClearWorld();
-			GenerateNewStarPoint();
-		}
-
 		if(RenderGenDebugTrail)
 		{
 
@@ -68,19 +59,9 @@ public class GalacticGenerator : MonoBehaviour {
 
 			}
 		}
-
-		if(RenderPathDebugTrail)
-		{
-			for(int i = 0; i < suns.Count; i++)
-			{
-				float smallestDistance = Mathf.Infinity;
-				int smallestDistanceIndex = -1;
-			}
-		}
 	}
-
-
-	private Vector2 LastPoint = new Vector2(0,0);
+	
+	
 
 	private void GenerateNewStarPoint()
 	{
@@ -114,7 +95,7 @@ public class GalacticGenerator : MonoBehaviour {
 			}
 			
 		}
-		linked = new bool[suns.Count];
+
 	}
 
 
@@ -126,13 +107,19 @@ public class GalacticGenerator : MonoBehaviour {
 
 			obj.transform.parent = transform;
 
-			SpriteRenderer renderer = obj.GetComponentInChildren<SpriteRenderer>();
-			renderer.color = new Vector4((float)random.NextDouble(),(float)random.NextDouble(),(float)random.NextDouble(),1);
+			Vector4 color = new Vector4((float)random.NextDouble(), (float)random.NextDouble(),(float)random.NextDouble(),1);
 
+			for(int i = 0; i < obj.transform.childCount; i++)
+			{
+				GameObject gobject = obj.transform.GetChild(i).gameObject;
+				SpriteRenderer renderer = obj.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>();
+				if(renderer == null || gobject.name == "Selector"){continue;}
+				renderer.color = color;
+			}
 		}
 	}
 
-	public void ClearWorld()
+	public void ClearWorlds()
 	{
 		var children = new List<GameObject>();
 		foreach(Transform child in transform) children.Add(child.gameObject); 
