@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 // Writtten by Sanic
@@ -30,13 +30,9 @@ public class Camera_Controller : MonoBehaviour {
 	float xPos = 0;
 	float yPos = 0;
 
+
 	void Update () 
 	{
-
-
-
-
-
 		float scroll = Input.GetAxis("Mouse ScrollWheel");
 
 		cam.orthographicSize += scroll * 25;
@@ -67,7 +63,7 @@ public class Camera_Controller : MonoBehaviour {
 		yPos = yPos % 1;
 		
 		star0.renderer.material.mainTextureOffset = new Vector2(-xPos,-yPos);
-		star1.renderer.material.mainTextureOffset = new Vector2(-xPos* .25f, -yPos * .25f);
+		star1.renderer.material.mainTextureOffset = new Vector2(-xPos * .25f, -yPos * .25f);
 		
 		
 		float xOff = Input.GetAxis("Horizontal") * camMoveSpeed * Time.deltaTime;
