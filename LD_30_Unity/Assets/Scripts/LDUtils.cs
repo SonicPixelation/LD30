@@ -21,13 +21,13 @@ public class LDUtils {
 
 	public static void LoadColors()
 	{
-		planetColors.Add(new Vector4(0,0,0,1));
+		//planetColors.Add(new Vector4(0,0,0,1));
 		planetColors.Add(new Vector4(1,1,0,1));
 		planetColors.Add(new Vector4(0,0,1,1));
 		planetColors.Add(new Vector4(0.09765625f, 0.09765625f, 0.4375f, 1));
 		planetColors.Add(new Vector4(0,.5f,.5f,1));
 		planetColors.Add(new Vector4(1,0,0,1));
-		planetColors.Add(new Vector4(1,0.078125f,0.0022430419921875f));
+		planetColors.Add(new Vector4(1,0.078125f,0.0022430419921875f,1));
 		planetColors.Add(new Vector4(1,0.026900585f, 0,1));
 		planetColors.Add(new Vector4(.75f,.75f,.75f,1));
 		planetColors.Add(new Vector4(1, 0.83984375f, 0,1));
@@ -96,7 +96,7 @@ public class LDUtils {
 		planetNames.Add("Hroth");
 		planetNames.Add("Bzzt");
 		planetNames.Add("Binic");
-		planetNames.Add("New_England");
+		planetNames.Add("New England");
 		planetNames.Add("OPO");
 		planetNames.Add("Niyt");
 		planetNames.Add("Apocol");
@@ -116,7 +116,7 @@ public class LDUtils {
 		planetNames.Add("Naz");
 		planetNames.Add("Exelcior");
 		planetNames.Add("Poo");
-		planetNames.Add("Shining_Light");
+		planetNames.Add("Shining Light");
 		planetNames.Add("USSA");
 		planetNames.Add("Connie");
 		planetNames.Add("Burt");
@@ -136,8 +136,8 @@ public class LDUtils {
 		planetNames.Add("Magikarp");
 		planetNames.Add("Naix");
 		planetNames.Add("Clark");
-		planetNames.Add("Never_gonna_give_you_up");
-		planetNames.Add("Never_gonna_let_you_down");
+		planetNames.Add("Never gonna give you up");
+		planetNames.Add("Never gonna let you down");
 		planetNames.Add("Swar");
 		planetNames.Add("Vadi");
 		planetNames.Add("Hornet");

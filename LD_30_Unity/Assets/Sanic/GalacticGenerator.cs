@@ -107,12 +107,16 @@ public class GalacticGenerator : MonoBehaviour {
 
 			obj.transform.parent = transform.FindChild("Canvas").transform;
 
-			Vector4 color = new Vector4((float)random.NextDouble(), (float)random.NextDouble(),(float)random.NextDouble(),1);
+			Vector4 color = LDUtils.planetColors[random.Next(0,LDUtils.planetColors.Count)];
 
 			for(int i = 0; i < obj.transform.childCount; i++)
 			{
 				GameObject gobject = obj.transform.GetChild(i).gameObject;
 				SpriteRenderer renderer = obj.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>();
+
+				SunHandler handler = obj.transform.GetComponent<SunHandler>();
+
+				handler.name = LDUtils.planetNames[random.Next(0,LDUtils.planetNames.Count)];
 
 				if(renderer == null || gobject.name == "Selector")
 				{
