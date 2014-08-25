@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 31de597fb0c24f44facc34a3bf7abad4
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sun: {instanceID: 0}
+  - targetSun: {instanceID: 0}
+  - ShipPrefab: {fileID: 100002, guid: be8a82eefaf480245a350fe34bc2283a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -1,0 +1,26 @@
+Initialize engine version: 4.6.0b17 (2d43734a3870)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7700 Series (ID=0x683f)
+    Vendor:   ATI
+    VRAM:     1006 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.060 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Programming\UnityProjects\LD30\LD_30_Unity\Test_1_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 3.758296 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 482.
+Total: 0.918784 ms (FindLiveObjects: 0.022801 ms CreateObjectMapping: 0.013949 ms MarkObjects: 0.275501 ms  DeleteObjects: 0.011535 ms)
+

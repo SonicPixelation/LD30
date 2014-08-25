@@ -24,8 +24,6 @@ public class GalacticGenerator : MonoBehaviour {
 
 	public bool RenderGenDebugTrail = false;
 
-	public bool RenderPathDebugTrail = false;
-
 	public GameObject SunPrefab;
 
 
@@ -79,7 +77,6 @@ public class GalacticGenerator : MonoBehaviour {
 				{
 
 					canContinue = false;
-					Debug.Log ("Bad World");
 					i--;
 					break;
 				}

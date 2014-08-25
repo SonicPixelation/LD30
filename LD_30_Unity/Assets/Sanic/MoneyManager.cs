@@ -8,6 +8,6 @@ public class MoneyManager : MonoBehaviour {
 
 	public void Update()
 	{
-		transform.GetComponent<Text>().text = "Money: " + GameManager.money;
+		transform.GetComponent<Text>().text = GameManager.money + " :Credits";
 	}
 }
